@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
+
+body {
+	color: hsl(208, 11%, 55%);
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20pt;
+	font-weight: 400;
+	margin: 0;
+}
+
+h1,
+h2 {
+	color: hsl(192, 100%, 9%);
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+}
+
+h3 {
+	color: hsl(0, 0%, 100%);
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+img {
+	width: 100%;
+}
+
+footer {
+	background-color: hsl(192, 100%, 9%);
+	padding-top: 130px;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(12, 8.33%);
+	grid-gap: 0px;
+	padding-left: 30px;
+	padding-right: 30px;
+	width: 100%-;
+}
+
+div.container {
+	padding-bottom: 130px;
+	padding-top: 130px;
+}
+
+.col6 {
+	grid-column: auto / span 6;
+	margin: 24px;
+}
+
+.col12 {
+	grid-column: auto / span 12;
+	margin: 24px;
+}
+
+.content-center {
+	text-align: center;
+}
+
+.content-right {
+	text-align: right;
+}
+
+.logo {
+	max-width: 250px;
+}
+
+.button,
+.button:visited {
+	background-image:
+		linear-gradient(
+			to top,
+			hsl(322, 100%, 66%), hsl(322, 100%, 75%)
+		);
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	box-shadow: 0px 6px 12px 0px hsl(208, 11%, 80%);
+	color: hsl(0, 0%, 100%);
+	font-size: 14pt;
+	font-weight: 700;
+	padding: 24px 120px;
+	text-decoration: none;
+}
+
+.button:hover,
+.button:active {
+	background-image:
+		linear-gradient(
+			to top,
+			hsl(322, 100%, 56%), hsl(322, 100%, 65%)
+		);
+}
+
+.button-inverted,
+.button-inverted:visited {
+	background-color: hsl(0, 0%, 100%);
+	border: solid 1.5pt hsl(322, 100%, 66%);
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	box-shadow: 0px 0px 3px 0px hsl(322, 100%, 66%);
+	color: hsl(322, 100%, 66%);
+	font-size: 14pt;
+	padding: 9px 30px;
+	text-decoration: none;
+}
+
+.button-inverted:hover,
+.button-inverted:active {
+	background-color: hsl(322, 100%, 66%);
+	color: hsl(0, 0%, 100%);
+}
+
+.hidden-mobile {
+	display: none;
+}
+
+.section-blue {
+	background-color: hsl(207, 100%, 98%);
+}
+
+.section-blue img {
+	width: 80%;
+}
+
+
+// Desktop version
+@media screen and (min-width: 720px) {
+	
+	.hidden-mobile {
+		display: inline;
+	}
+
+	.col3 {
+		grid-column: auto / span 3;
+		margin: 24px;
+	}
+	
+	.col6-desktop {
+		grid-column: auto / span 6;
+		margin: 24px;
+	}
+
+}
